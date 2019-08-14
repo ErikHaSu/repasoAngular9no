@@ -10,19 +10,35 @@ export class DataService {
 
   constructor(private http: HttpClient) { }
 
-  getPosts(){
+  getPosts() {
     return this.http.get('https://jsonplaceholder.typicode.com/posts')
     .pipe(
-      tap(posts=> {
+      tap(posts => {
         console.log(posts);
       })
     );
   }
-  getPhotos(){
+  getPhotos() {
     return this.http.get('https://jsonplaceholder.typicode.com/photos')
     .pipe(
-      tap(img=> {
+      tap(img => {
         console.log(img);
+      })
+    );
+  }
+  getTodos() {
+    return this.http.get('https://jsonplaceholder.typicode.com/todos')
+    .pipe(
+      tap(todos => {
+        console.log(todos);
+      })
+      );
+  }
+  getUsers() {
+    return this.http.get('https://jsonplaceholder.typicode.com/users')
+    .pipe(
+      tap(users => {
+        console.log(users);
       })
     );
   }

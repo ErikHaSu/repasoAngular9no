@@ -1,0 +1,11 @@
+<ul class="list-group">
+    <app-todo  *ngFor="let i of todosRemote | async; let l = index" [i]="i" [l]="l"></app-todo>
+  <!-- <li class="list-group-item" *ngFor="let i of todosRemote | async">
+      <div> 
+          <h1>Titulo: {{ i.title }}</h1>
+          <h2>Completado: {{ i.completed }}</h2>
+        </div>
+  </li> -->
+</ul>
+
+

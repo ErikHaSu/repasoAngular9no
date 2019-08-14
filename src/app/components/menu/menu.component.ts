@@ -17,16 +17,24 @@ export class MenuComponent implements OnInit {
   nombre: 'About'
 },
 {
-  path: '/posts',
-  nombre: 'Post'
-},
-{
   path: '/contact',
   nombre: 'Contact'
 },
 {
+  path: '/posts',
+  nombre: 'Post'
+},
+{
   path: '/img',
-  nombre:'Img'
+  nombre:'Images'
+},
+{
+  path: '/todos',
+  nombre: 'Todos'
+},
+{
+  path: '/users',
+  nombre: 'Users'
 }
    ];
   constructor() { }

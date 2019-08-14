@@ -1,3 +1,14 @@
-<p>
-  img works!
-</p>
+<h1> Imagenes</h1>
+<ul class="list-group">
+    <app-imagen *ngFor="let img of imgRemote | async; let i = index" [img]="img" [i]="i"></app-imagen>
+      <!-- <li class="list-group-item">
+          <div *ngFor="let img of imgRemote | async; let i = index" >
+            <div *ngIf="i<50" float="left">
+                    <h2> {{ img.title }} </h2>
+                    <img [src]=img.url height="150" width="150"> 
+            </div>
+          </div>
+          
+      </li> -->
+
+</ul>

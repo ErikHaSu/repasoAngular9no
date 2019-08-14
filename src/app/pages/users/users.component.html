@@ -1,0 +1,12 @@
+<ul class="list-grup">
+  <app-user *ngFor="let user of usersRemote | async" [user]="user"></app-user>
+  <!-- <li class="list-group-item "*ngFor="let user of usersRemote | async">
+    <div>
+      <h2> Nombre: {{ user.name}} </h2>
+      <h2> Apodo: {{user.username}} </h2>
+      <p> Correo electronico: {{user.email}} </p>
+      <p> Sitio web: {{user.website}} </p>
+      <p> Numero telefonico: {{user.phone}} </p>
+    </div> 
+  </li> -->
+</ul>

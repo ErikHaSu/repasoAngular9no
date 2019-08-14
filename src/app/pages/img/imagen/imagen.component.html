@@ -1,3 +1,9 @@
-<p>
-  imagen works!
-</p>
+<li class="list-group-item" *ngIf="i<50">
+    <div>
+      <div  float="left">
+              <h2> {{ img.title }} </h2>
+              <img [src]=img.url height="150" width="150"> 
+      </div>
+    </div>
+    
+</li>

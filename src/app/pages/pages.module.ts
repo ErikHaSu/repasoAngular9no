@@ -7,6 +7,10 @@ import { PostsComponent } from './posts/posts.component';
 import { PostComponent } from './posts/post/post.component';
 import { ImgComponent } from './img/img.component';
 import { ImagenComponent } from './img/imagen/imagen.component';
+import { UsersComponent } from './users/users.component';
+import { TodosComponent } from './todos/todos.component';
+import { TodoComponent } from './todos/todo/todo.component';
+import { UserComponent } from './users/user/user.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +20,11 @@ import { ImagenComponent } from './img/imagen/imagen.component';
     PostsComponent,
     PostComponent,
     ImgComponent,
-    ImagenComponent
+    ImagenComponent,
+    UsersComponent,
+    TodosComponent,
+    TodoComponent,
+    UserComponent
   ],
   exports:[
     HomeComponent,

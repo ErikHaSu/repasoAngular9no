@@ -7,15 +7,14 @@ import { DataService } from '../../services/data.service';
   styleUrls: ['./img.component.css']
 })
 export class ImgComponent implements OnInit {
-  imgRemote: any ;
+  imgRemote: any;
   constructor(private dataService: DataService) { }
 
   ngOnInit() {
-    this.imgRemote = this.dataService.getPosts();
+    this.imgRemote = this.dataService.getPhotos()
+
   }
   
-  onClickPadre(id) {
-    console.log(id)
-  }
+
 
 }
